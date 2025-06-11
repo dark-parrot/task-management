@@ -39,7 +39,6 @@ A comprehensive task and project management system built with Laravel. This appl
 2. Install dependencies:
    ```bash
    composer install
-   npm install
    ```
 
 3. Create and configure the environment file:
