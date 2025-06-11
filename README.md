@@ -32,7 +32,7 @@ A comprehensive task and project management system built with Laravel. This appl
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/task_manager.git
+   git clone https://github.com/dark-parrot/task-management.git
    cd task_manager
    ```
 
