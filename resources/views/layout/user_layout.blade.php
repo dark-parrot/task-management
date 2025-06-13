@@ -95,7 +95,7 @@
                 </form>
                 
                 <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form-nav').submit();">
-                    <button class="logout-button">
+                    <button class="btn btn-primary">
                         <i class="fas fa-sign-out-alt me-2"></i> Logout
                     </button>
                 </a>

@@ -102,7 +102,7 @@
             </form>
         </div>
         
-        <div class="card">
+        {{-- <div class="card">
             <h5 class="card-title">
                 <i class="fas fa-shield-alt me-2"></i>Account Security
             </h5>
@@ -121,7 +121,7 @@
                     <i class="fas fa-sign-out-alt me-2"></i>Log Out Other Sessions (Coming Soon)
                 </button>
             </div>
-        </div>
+        </div> --}}
     </div>
 </div>
 @endsection

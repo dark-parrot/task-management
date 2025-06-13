@@ -36,7 +36,15 @@
             color: var(--text-primary);
             background: var(--primary-bg);
             overflow-x: hidden;
+            overflow-y: scroll;
+            /* overflow: auto;
+            scrollbar-width: none;    
+            -ms-overflow-style: none;  */
         }
+        body::-webkit-scrollbar {
+            display: none;           
+        }
+
         
         body::before {
             content: '';

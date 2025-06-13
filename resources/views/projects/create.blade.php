@@ -6,9 +6,16 @@
 <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 <style>
     /* Select2 Dark Theme Styling */
+    .form-control {
+        background-color: #131a41;
+        /* border: var(--glass-border);
+        border-radius: 10px;
+        color: var(--text-primary); */
+    }
+
     .select2-container--default .select2-selection--multiple,
     .select2-container--default .select2-selection--single {
-        background-color: rgba(255, 255, 255, 0.05);
+        background-color: #131a41;
         border: var(--glass-border);
         border-radius: 10px;
         min-height: 38px;
@@ -22,7 +29,7 @@
     }
     
     .select2-container--default .select2-selection--multiple .select2-selection__choice {
-        background-color: var(--accent-blue);
+        background-color: #131a41;
         border: none;
         color: white;
         border-radius: 20px;
@@ -38,12 +45,14 @@
     }
     
     .select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover {
-        background-color: rgba(255, 255, 255, 0.2);
+        /* background-color: rgba(255, 255, 255, 0.2); */
+        background-color: #131a41;
         color: white;
     }
     
     .select2-dropdown {
-        background-color: var(--secondary-bg);
+        /* background-color: var(--secondary-bg); */
+        background-color: #131a41;
         border: var(--glass-border);
         border-radius: 10px;
         box-shadow: var(--glass-shadow);
@@ -52,7 +61,7 @@
     
     .select2-container--default .select2-results__option--highlighted[aria-selected],
     .select2-container--default .select2-results__option--highlighted[data-selected] {
-        background-color: var(--accent-blue);
+        background-color: #131a41;
         color: white;
     }
     
@@ -62,12 +71,15 @@
     }
     
     .select2-container--default .select2-results__option {
+        background-color: #131a41;
+        color: white;
+        cursor: pointer;
         padding: 8px 12px;
         transition: all 0.2s ease;
     }
     
     .select2-container--default .select2-search--dropdown .select2-search__field {
-        background-color: rgba(255, 255, 255, 0.1);
+        background: #131a41;
         border: var(--glass-border);
         color: var(--text-primary);
         border-radius: 5px;
@@ -115,6 +127,13 @@
     .required-label::after {
         content: " *";
         color: var(--accent-red);
+    }
+
+    .dark-select-dropdown {
+        background-color: #131a41 !important;
+        border: var(--glass-border);
+        border-radius: 10px;
+        box-shadow: var(--glass-shadow);
     }
 </style>
 @endsection
@@ -203,7 +222,7 @@
             <label for="team_members" class="form-label">Team Members</label>
             <select class="form-control select2" id="team_members" name="team_members[]" multiple>
                 @foreach($users as $user)
-                    <option value="{{ $user->id }}" {{ in_array($user->id, old('team_members', [])) ? 'selected' : '' }}>
+                    <option value="{{ $user->id }}" {{ in_array($user->id, old('team_members', [])) ? 'selected' : '' }} style="background-color: #131a41;">
                         {{ $user->name }}
                     </option>
                 @endforeach
